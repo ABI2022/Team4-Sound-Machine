@@ -6,6 +6,8 @@
 #include "framework.h"
 #include "Team4-Sound-Machine.h"
 #include "Team4-Sound-MachineDlg.h"
+#include "DrumMachine.h"
+#include "AboutBox.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -65,6 +67,8 @@ BEGIN_MESSAGE_MAP(CTeam4SoundMachineDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_DRUMMACHINE, &CTeam4SoundMachineDlg::OnBnClickedDrummachine)
+	ON_BN_CLICKED(ID_APP_ABOUT, &CTeam4SoundMachineDlg::OnBnClickedAppAbout)
 END_MESSAGE_MAP()
 
 
@@ -153,3 +157,19 @@ HCURSOR CTeam4SoundMachineDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+void CTeam4SoundMachineDlg::OnBnClickedDrummachine()
+{
+	DrumMachine* drummachine = new DrumMachine();
+	drummachine->DoModal();
+
+	delete drummachine;
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedAppAbout()
+{
+	AboutBox* credits = new AboutBox();
+	credits->DoModal();
+
+	delete credits;
+}
