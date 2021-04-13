@@ -69,6 +69,7 @@ BEGIN_MESSAGE_MAP(CTeam4SoundMachineDlg, CDialogEx)
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_DRUMMACHINE, &CTeam4SoundMachineDlg::OnBnClickedDrummachine)
 	ON_BN_CLICKED(ID_APP_ABOUT, &CTeam4SoundMachineDlg::OnBnClickedAppAbout)
+	ON_BN_CLICKED(IDC_BUTTONTEST, &CTeam4SoundMachineDlg::OnBnClickedButtontest)
 END_MESSAGE_MAP()
 
 
@@ -172,4 +173,10 @@ void CTeam4SoundMachineDlg::OnBnClickedAppAbout()
 	credits->DoModal();
 
 	delete credits;
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButtontest()
+{
+	GetDlgItem(IDC_BUTTONTEST)->SetWindowTextW() // Irgendnen setter, der den Text vom Button ändert, wenn er gedrückt wurde.
 }

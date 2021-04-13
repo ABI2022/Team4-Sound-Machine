@@ -34,4 +34,5 @@ protected:
 public:
 	afx_msg void OnBnClickedDrummachine();
 	afx_msg void OnBnClickedAppAbout();
+	afx_msg void OnBnClickedButtontest();
 };
