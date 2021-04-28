@@ -178,5 +178,5 @@ void CTeam4SoundMachineDlg::OnBnClickedAppAbout()
 
 void CTeam4SoundMachineDlg::OnBnClickedButtontest()
 {
-	GetDlgItem(IDC_BUTTONTEST)->SetWindowTextW() // Irgendnen setter, der den Text vom Button ändert, wenn er gedrückt wurde.
+	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("X")); // Irgendnen setter, der den Text vom Button ändert, wenn er gedrückt wurde.
 }
