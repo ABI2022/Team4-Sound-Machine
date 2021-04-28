@@ -9,6 +9,11 @@
 #include "DrumMachine.h"
 #include "AboutBox.h"
 #include "afxdialogex.h"
+#include <Mmsystem.h>
+#include <mciapi.h>
+//these two headers are already included in the <Windows.h> header
+#pragma comment(lib, "Winmm.lib")
+
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -178,7 +183,9 @@ void CTeam4SoundMachineDlg::OnBnClickedAppAbout()
 
 void CTeam4SoundMachineDlg::OnBnClickedButtontest()
 {
+	mciSendString(_T("open test.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play test.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("X"));
 	Sleep (1000);
-	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("Hat geklappt"));
+	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("Uhh Schick!"));
 }
