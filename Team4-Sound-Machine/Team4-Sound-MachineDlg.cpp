@@ -183,9 +183,10 @@ void CTeam4SoundMachineDlg::OnBnClickedAppAbout()
 
 void CTeam4SoundMachineDlg::OnBnClickedButtontest()
 {
-	mciSendString(_T("open test.mp3"), NULL, 0, NULL);
-	mciSendString(_T("play test.mp3 from 0"), NULL, 0, NULL);
-	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("X"));
+	const wchar_t indiv[] = (_T("test")); // Für umbenennen --> Name wird in "indiv" gespeichert und kann somit in SetWindwText eingesetzt werden
+	mciSendString(_T("open test.mp3"), NULL, 0, NULL); // öffnet mp3
+	mciSendString(_T("play test.mp3 from 0"), NULL, 0, NULL); //spielt mp3 bei jedem klick von vorne
+	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("X")); // Feedback vom angewählten Button
 	Sleep (1000);
-	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("Uhh Schick!"));
+	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(indiv); // Einsetzen vom Individuellen Text
 }
