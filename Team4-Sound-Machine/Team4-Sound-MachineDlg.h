@@ -35,4 +35,17 @@ public:
 	afx_msg void OnBnClickedDrummachine();
 	afx_msg void OnBnClickedAppAbout();
 	afx_msg void OnBnClickedButtontest();
+	afx_msg void OnBnClickedButton2();
+	afx_msg void OnBnClickedButton3();
+	afx_msg void OnBnClickedButton4();
+	afx_msg void OnBnClickedButton5();
+	afx_msg void OnBnClickedButton6();
+	afx_msg void OnBnClickedButton8();
+	afx_msg void OnBnClickedButton7();
+	afx_msg void OnBnClickedButton9();
+	afx_msg void OnBnClickedButton10();
+	afx_msg void OnBnClickedButton11();
+	afx_msg void OnBnClickedButton12();
+	afx_msg void OnBnClickedButton13();
+	afx_msg void OnBnClickedButton14();
 };

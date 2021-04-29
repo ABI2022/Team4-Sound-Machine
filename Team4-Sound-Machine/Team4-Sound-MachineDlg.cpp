@@ -75,6 +75,19 @@ BEGIN_MESSAGE_MAP(CTeam4SoundMachineDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_DRUMMACHINE, &CTeam4SoundMachineDlg::OnBnClickedDrummachine)
 	ON_BN_CLICKED(ID_APP_ABOUT, &CTeam4SoundMachineDlg::OnBnClickedAppAbout)
 	ON_BN_CLICKED(IDC_BUTTONTEST, &CTeam4SoundMachineDlg::OnBnClickedButtontest)
+	ON_BN_CLICKED(IDC_BUTTON2, &CTeam4SoundMachineDlg::OnBnClickedButton2)
+	ON_BN_CLICKED(IDC_BUTTON3, &CTeam4SoundMachineDlg::OnBnClickedButton3)
+	ON_BN_CLICKED(IDC_BUTTON4, &CTeam4SoundMachineDlg::OnBnClickedButton4)
+	ON_BN_CLICKED(IDC_BUTTON5, &CTeam4SoundMachineDlg::OnBnClickedButton5)
+	ON_BN_CLICKED(IDC_BUTTON6, &CTeam4SoundMachineDlg::OnBnClickedButton6)
+	ON_BN_CLICKED(IDC_BUTTON8, &CTeam4SoundMachineDlg::OnBnClickedButton8)
+	ON_BN_CLICKED(IDC_BUTTON7, &CTeam4SoundMachineDlg::OnBnClickedButton7)
+	ON_BN_CLICKED(IDC_BUTTON9, &CTeam4SoundMachineDlg::OnBnClickedButton9)
+	ON_BN_CLICKED(IDC_BUTTON10, &CTeam4SoundMachineDlg::OnBnClickedButton10)
+	ON_BN_CLICKED(IDC_BUTTON11, &CTeam4SoundMachineDlg::OnBnClickedButton11)
+	ON_BN_CLICKED(IDC_BUTTON12, &CTeam4SoundMachineDlg::OnBnClickedButton12)
+	ON_BN_CLICKED(IDC_BUTTON13, &CTeam4SoundMachineDlg::OnBnClickedButton13)
+	ON_BN_CLICKED(IDC_BUTTON14, &CTeam4SoundMachineDlg::OnBnClickedButton14)
 END_MESSAGE_MAP()
 
 
@@ -181,12 +194,141 @@ void CTeam4SoundMachineDlg::OnBnClickedAppAbout()
 }
 
 
-void CTeam4SoundMachineDlg::OnBnClickedButtontest()
+void CTeam4SoundMachineDlg::OnBnClickedButtontest() // Erklärung vom Sound-Abspielen
 {
-	const wchar_t indiv[] = (_T("test")); // Für umbenennen --> Name wird in "indiv" gespeichert und kann somit in SetWindwText eingesetzt werden
-	mciSendString(_T("open test.mp3"), NULL, 0, NULL); // öffnet mp3
-	mciSendString(_T("play test.mp3 from 0"), NULL, 0, NULL); //spielt mp3 bei jedem klick von vorne
+	// const wchar_t indiv[] = (_T("test")); / Für umbenennen --> Name wird in "indiv" gespeichert und kann somit in SetWindwText eingesetzt werden
+	mciSendString(_T("open schick.mp3"), NULL, 0, NULL); // öffnet mp3
+	mciSendString(_T("play schick.mp3 from 0"), NULL, 0, NULL); //spielt mp3 bei jedem klick von vorne
 	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("X")); // Feedback vom angewählten Button
 	Sleep (1000);
-	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(indiv); // Einsetzen vom Individuellen Text
+	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("Uhh Schick!")); // Einsetzen vom Individuellen Text oder Vorherigem
+}
+
+void CTeam4SoundMachineDlg::OnBnClickedButton2()
+{
+	mciSendString(_T("open hehe_boi.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play hehe_boi.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON2)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON2)->SetWindowText(_T("Hehe Boi"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton3()
+{
+	mciSendString(_T("open monke.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play monke.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON3)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON3)->SetWindowText(_T("Monke"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton4()
+{
+	mciSendString(_T("open reingeorgelt.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play reingeorgelt.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON4)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON4)->SetWindowText(_T("Reingeorgelt"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton5()
+{
+	mciSendString(_T("open nachmittag_bier.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play nachmittag_bier.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON5)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON5)->SetWindowText(_T("Bier"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton6()
+{
+	mciSendString(_T("open hinauslaufen.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play hinauslaufen.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON6)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON6)->SetWindowText(_T("Hinauslaufen"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton8()
+{
+	mciSendString(_T("open Jagi.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play Jagi.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON8)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON8)->SetWindowText(_T("Jägermeister"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton7()
+{
+	mciSendString(_T("open Fabio.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play Fabio.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON7)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON7)->SetWindowText(_T("Fabio"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton9()
+{
+	mciSendString(_T("open orangensaft.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play orangensaft.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON9)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON9)->SetWindowText(_T("Orangensaft"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton10()
+{
+	mciSendString(_T("open blaues_licht.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play blaues_licht.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON10)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON10)->SetWindowText(_T("Blaulicht"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton11()
+{
+	mciSendString(_T("open Bitconnect.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play Bitconnect.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON11)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON11)->SetWindowText(_T("Bitconnect"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton12()
+{
+	mciSendString(_T("open landvogt.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play landvogt.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON12)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON12)->SetWindowText(_T("Landvogt"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton13()
+{
+	mciSendString(_T("open fuenf_sek.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play fuenf_sek.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON13)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON13)->SetWindowText(_T("5 Sekunden"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton14()
+{
+	mciSendString(_T("open Boss.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play Boss.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON14)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON14)->SetWindowText(_T("Boss"));
 }
