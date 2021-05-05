@@ -256,8 +256,8 @@ void CTeam4SoundMachineDlg::OnBnClickedButton6()
 
 void CTeam4SoundMachineDlg::OnBnClickedButton8()
 {
-	mciSendString(_T("open Jagi.mp3"), NULL, 0, NULL);
-	mciSendString(_T("play Jagi.mp3 from 0"), NULL, 0, NULL);
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\Jagi.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\Jagi.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON8)->SetWindowText(_T("X"));
 	Sleep(1000);
 	GetDlgItem(IDC_BUTTON8)->SetWindowText(_T("Jägermeister"));
@@ -276,8 +276,8 @@ void CTeam4SoundMachineDlg::OnBnClickedButton7()
 
 void CTeam4SoundMachineDlg::OnBnClickedButton9()
 {
-	mciSendString(_T("open orangensaft.mp3"), NULL, 0, NULL);
-	mciSendString(_T("play orangensaft.mp3 from 0"), NULL, 0, NULL);
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\orangensaft.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\orangensaft.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON9)->SetWindowText(_T("X"));
 	Sleep(1000);
 	GetDlgItem(IDC_BUTTON9)->SetWindowText(_T("Orangensaft"));
@@ -286,8 +286,8 @@ void CTeam4SoundMachineDlg::OnBnClickedButton9()
 
 void CTeam4SoundMachineDlg::OnBnClickedButton10()
 {
-	mciSendString(_T("open blaues_licht.mp3"), NULL, 0, NULL);
-	mciSendString(_T("play blaues_licht.mp3 from 0"), NULL, 0, NULL);
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\blaues_licht.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\blaues_licht.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON10)->SetWindowText(_T("X"));
 	Sleep(1000);
 	GetDlgItem(IDC_BUTTON10)->SetWindowText(_T("Blaulicht"));
@@ -296,8 +296,8 @@ void CTeam4SoundMachineDlg::OnBnClickedButton10()
 
 void CTeam4SoundMachineDlg::OnBnClickedButton11()
 {
-	mciSendString(_T("open Bitconnect.mp3"), NULL, 0, NULL);
-	mciSendString(_T("play Bitconnect.mp3 from 0"), NULL, 0, NULL);
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\Bitconnect.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\Bitconnect.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON11)->SetWindowText(_T("X"));
 	Sleep(1000);
 	GetDlgItem(IDC_BUTTON11)->SetWindowText(_T("Bitconnect"));
@@ -306,8 +306,8 @@ void CTeam4SoundMachineDlg::OnBnClickedButton11()
 
 void CTeam4SoundMachineDlg::OnBnClickedButton12()
 {
-	mciSendString(_T("open landvogt.mp3"), NULL, 0, NULL);
-	mciSendString(_T("play landvogt.mp3 from 0"), NULL, 0, NULL);
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\landvogt.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\landvogt.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON12)->SetWindowText(_T("X"));
 	Sleep(1000);
 	GetDlgItem(IDC_BUTTON12)->SetWindowText(_T("Landvogt"));
@@ -316,8 +316,8 @@ void CTeam4SoundMachineDlg::OnBnClickedButton12()
 
 void CTeam4SoundMachineDlg::OnBnClickedButton13()
 {
-	mciSendString(_T("open fuenf_sek.mp3"), NULL, 0, NULL);
-	mciSendString(_T("play fuenf_sek.mp3 from 0"), NULL, 0, NULL);
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\fuenf_sek.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\fuenf_sek.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON13)->SetWindowText(_T("X"));
 	Sleep(1000);
 	GetDlgItem(IDC_BUTTON13)->SetWindowText(_T("5 Sekunden"));
@@ -326,8 +326,8 @@ void CTeam4SoundMachineDlg::OnBnClickedButton13()
 
 void CTeam4SoundMachineDlg::OnBnClickedButton14()
 {
-	mciSendString(_T("open Boss.mp3"), NULL, 0, NULL);
-	mciSendString(_T("play Boss.mp3 from 0"), NULL, 0, NULL);
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\Boss.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\Boss.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON14)->SetWindowText(_T("X"));
 	Sleep(1000);
 	GetDlgItem(IDC_BUTTON14)->SetWindowText(_T("Boss"));
