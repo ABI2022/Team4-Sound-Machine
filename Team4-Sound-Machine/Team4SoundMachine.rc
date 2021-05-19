@@ -57,7 +57,7 @@ BEGIN
     "#include ""res\\Team4SoundMachine.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
     "#include ""l.DEU\\afxres.rc""      // Standardkomponenten\r\n"
     "#if !defined(_AFXDLL)\r\n"
-    "#include ""l.DEU\\afxribbon.rc""   // Ressourcen für MFC-Menüband und -Steuerleiste\r\n"
+    "#include ""l.DEU\\afxribbon.rc""   // Ressourcen fÃ¼r MFC-MenÃ¼band und -Steuerleiste\r\n"
     "#endif\r\n"
     "#endif\r\n"
     "\0"
@@ -107,14 +107,14 @@ BEGIN
     PUSHBUTTON      "Bier ",IDC_BUTTON5,273,16,50,35
     PUSHBUTTON      "Hinauslaufen",IDC_BUTTON6,337,16,50,35
     PUSHBUTTON      "Fabio",IDC_BUTTON7,401,16,50,35
-    PUSHBUTTON      "Jägermeister",IDC_BUTTON8,17,65,50,35
+    PUSHBUTTON      "Jaegermeister",IDC_BUTTON8,17,65,50,35
     PUSHBUTTON      "Orangensaft",IDC_BUTTON9,81,65,50,35
     PUSHBUTTON      "Blaulicht",IDC_BUTTON10,145,65,50,35
     PUSHBUTTON      "Bitconnect",IDC_BUTTON11,209,65,50,35
     PUSHBUTTON      "Landvogt",IDC_BUTTON12,273,65,50,35
     PUSHBUTTON      "5 Sekunden",IDC_BUTTON13,337,65,50,35
     PUSHBUTTON      "Boss",IDC_BUTTON14,401,65,50,35
-    PUSHBUTTON      "(  ͡°  ͜ʖ  ͡° )",IDC_BUTTON15,17,114,50,35
+    PUSHBUTTON      "( ͡° ͜ʖ ͡°)",IDC_BUTTON15,17,114,50,35
     PUSHBUTTON      "Button1",IDC_BUTTON16,81,114,50,35
     PUSHBUTTON      "Button1",IDC_BUTTON17,145,114,50,35
     PUSHBUTTON      "Button1",IDC_BUTTON18,209,114,50,35
@@ -152,9 +152,15 @@ BEGIN
     DEFPUSHBUTTON   "OK",IDOK,198,156,50,14
     PUSHBUTTON      "Abbrechen",IDCANCEL,254,156,50,14
     PUSHBUTTON      "Kick",IDC_KICK,27,25,50,35
-    PUSHBUTTON      "Snare",IDC_SNARE,27,74,50,35
-    PUSHBUTTON      "Hi-Hat",IDC_HIHAT,91,25,50,35
-    PUSHBUTTON      "Chords",IDC_CHORDS,91,74,50,35
+    PUSHBUTTON      "Drums",IDC_SNARE,27,74,50,35
+    PUSHBUTTON      "Hi-Hat",IDC_HIHAT,109,25,50,35
+    PUSHBUTTON      "Chords",IDC_CHORDS,109,74,50,35
+    PUSHBUTTON      "X",IDC_KICK1STOP,77,25,17,15
+    PUSHBUTTON      "X",IDC_DRUMS1STOP,78,74,17,15
+    PUSHBUTTON      "X",IDC_KICK4,159,25,17,15
+    PUSHBUTTON      "X",IDC_KICK5,159,74,17,15
+    PUSHBUTTON      "Metronom",IDC_METRONOM,27,122,50,35
+    PUSHBUTTON      "X",IDC_METRONOMSTOP,78,122,17,15
 END
 
 
@@ -283,7 +289,7 @@ LANGUAGE 7, 1
 #include "res\Team4SoundMachine.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
 #include "l.DEU\afxres.rc"      // Standardkomponenten
 #if !defined(_AFXDLL)
-#include "l.DEU\afxribbon.rc"   // Ressourcen für MFC-Menüband und -Steuerleiste
+#include "l.DEU\afxribbon.rc"   // Ressourcen fÃ¼r MFC-MenÃ¼band und -Steuerleiste
 #endif
 #endif
 

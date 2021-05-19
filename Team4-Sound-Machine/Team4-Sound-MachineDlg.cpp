@@ -288,7 +288,7 @@ void CTeam4SoundMachineDlg::OnBnClickedButton8()
 	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\Jagi.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON8)->SetWindowText(_T("X"));
 	Sleep(1000);
-	GetDlgItem(IDC_BUTTON8)->SetWindowText(_T("Jägermeister"));
+	GetDlgItem(IDC_BUTTON8)->SetWindowText(_T("Jaegermeister"));
 }
 
 
@@ -368,7 +368,7 @@ void CTeam4SoundMachineDlg::OnBnClickedButton15()
 	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\PH.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON15)->SetWindowText(_T("X"));
 	Sleep(1000);
-	GetDlgItem(IDC_BUTTON15)->SetWindowText(_T("\x28 \x20 \x361 \xb0 \x20 \x35c \x296 \x20 \x361 \xb0 \x29")); //ist nen feature
+	GetDlgItem(IDC_BUTTON15)->SetWindowText(_T("\x28\x20\x361\xb0\x20\x35c\x296\x20\x361\xb0\x29")); //ist nen feature
 }
 
 
