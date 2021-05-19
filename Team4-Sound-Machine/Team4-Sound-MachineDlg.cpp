@@ -88,6 +88,34 @@ BEGIN_MESSAGE_MAP(CTeam4SoundMachineDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON12, &CTeam4SoundMachineDlg::OnBnClickedButton12)
 	ON_BN_CLICKED(IDC_BUTTON13, &CTeam4SoundMachineDlg::OnBnClickedButton13)
 	ON_BN_CLICKED(IDC_BUTTON14, &CTeam4SoundMachineDlg::OnBnClickedButton14)
+	ON_BN_CLICKED(IDC_BUTTON15, &CTeam4SoundMachineDlg::OnBnClickedButton15)
+	ON_BN_CLICKED(IDC_BUTTON16, &CTeam4SoundMachineDlg::OnBnClickedButton16)
+	ON_BN_CLICKED(IDC_BUTTON17, &CTeam4SoundMachineDlg::OnBnClickedButton17)
+	ON_BN_CLICKED(IDC_BUTTON18, &CTeam4SoundMachineDlg::OnBnClickedButton18)
+	ON_BN_CLICKED(IDC_BUTTON19, &CTeam4SoundMachineDlg::OnBnClickedButton19)
+	ON_BN_CLICKED(IDC_BUTTON20, &CTeam4SoundMachineDlg::OnBnClickedButton20)
+	ON_BN_CLICKED(IDC_BUTTON21, &CTeam4SoundMachineDlg::OnBnClickedButton21)
+	ON_BN_CLICKED(IDC_BUTTON29, &CTeam4SoundMachineDlg::OnBnClickedButton29)
+	ON_BN_CLICKED(IDC_BUTTON30, &CTeam4SoundMachineDlg::OnBnClickedButton30)
+	ON_BN_CLICKED(IDC_BUTTON31, &CTeam4SoundMachineDlg::OnBnClickedButton31)
+	ON_BN_CLICKED(IDC_BUTTON32, &CTeam4SoundMachineDlg::OnBnClickedButton32)
+	ON_BN_CLICKED(IDC_BUTTON33, &CTeam4SoundMachineDlg::OnBnClickedButton33)
+	ON_BN_CLICKED(IDC_BUTTON34, &CTeam4SoundMachineDlg::OnBnClickedButton34)
+	ON_BN_CLICKED(IDC_BUTTON35, &CTeam4SoundMachineDlg::OnBnClickedButton35)
+	ON_BN_CLICKED(IDC_BUTTON36, &CTeam4SoundMachineDlg::OnBnClickedButton36)
+	ON_BN_CLICKED(IDC_BUTTON37, &CTeam4SoundMachineDlg::OnBnClickedButton37)
+	ON_BN_CLICKED(IDC_BUTTON38, &CTeam4SoundMachineDlg::OnBnClickedButton38)
+	ON_BN_CLICKED(IDC_BUTTON39, &CTeam4SoundMachineDlg::OnBnClickedButton39)
+	ON_BN_CLICKED(IDC_BUTTON40, &CTeam4SoundMachineDlg::OnBnClickedButton40)
+	ON_BN_CLICKED(IDC_BUTTON41, &CTeam4SoundMachineDlg::OnBnClickedButton41)
+	ON_BN_CLICKED(IDC_BUTTON42, &CTeam4SoundMachineDlg::OnBnClickedButton42)
+	ON_BN_CLICKED(IDC_BUTTON43, &CTeam4SoundMachineDlg::OnBnClickedButton43)
+	ON_BN_CLICKED(IDC_BUTTON44, &CTeam4SoundMachineDlg::OnBnClickedButton44)
+	ON_BN_CLICKED(IDC_BUTTON45, &CTeam4SoundMachineDlg::OnBnClickedButton45)
+	ON_BN_CLICKED(IDC_BUTTON46, &CTeam4SoundMachineDlg::OnBnClickedButton46)
+	ON_BN_CLICKED(IDC_BUTTON47, &CTeam4SoundMachineDlg::OnBnClickedButton47)
+	ON_BN_CLICKED(IDC_BUTTON48, &CTeam4SoundMachineDlg::OnBnClickedButton48)
+	ON_BN_CLICKED(IDC_BUTTON49, &CTeam4SoundMachineDlg::OnBnClickedButton49)
 END_MESSAGE_MAP()
 
 
@@ -331,4 +359,187 @@ void CTeam4SoundMachineDlg::OnBnClickedButton14()
 	GetDlgItem(IDC_BUTTON14)->SetWindowText(_T("X"));
 	Sleep(1000);
 	GetDlgItem(IDC_BUTTON14)->SetWindowText(_T("Boss"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton15()
+{
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\PH.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\PH.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON15)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON15)->SetWindowText(_T("\x28 \x20 \x361 \xb0 \x20 \x35c \x296 \x20 \x361 \xb0 \x29")); //ist nen feature
+}
+
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton16()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton17()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton18()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton19()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton20()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton21()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton29()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton30()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton31()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton32()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton33()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton34()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton35()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+
+//Individuelle Buttons (Siehe Bedienungsanleitung)
+void CTeam4SoundMachineDlg::OnBnClickedButton36() 
+{
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\indiv1.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\indiv1.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON36)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON36)->SetWindowText(_T("Indiv 1"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton37()
+{
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\indiv2.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\indiv2.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON37)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON37)->SetWindowText(_T("Indiv 2"));
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton38()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton39()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton40()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton41()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton42()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton43()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton44()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton45()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton46()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton47()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton48()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+}
+
+
+void CTeam4SoundMachineDlg::OnBnClickedButton49()
+{
+	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
 }
