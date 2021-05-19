@@ -19,9 +19,13 @@
 #define IDC_BUTTON7                     1013
 #define IDC_CHECK1                      1014
 #define IDC_BUTTON8                     1015
+#define IDC_KICK                        1015
 #define IDC_BUTTON9                     1016
+#define IDC_HIHAT                       1016
 #define IDC_BUTTON10                    1017
+#define IDC_SNARE                       1017
 #define IDC_BUTTON11                    1018
+#define IDC_CHORDS                      1018
 #define IDC_BUTTON12                    1019
 #define IDC_BUTTON13                    1020
 #define IDC_BUTTON14                    1021
@@ -58,9 +62,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        132
+#define _APS_NEXT_RESOURCE_VALUE        133
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1015
+#define _APS_NEXT_CONTROL_VALUE         1019
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
