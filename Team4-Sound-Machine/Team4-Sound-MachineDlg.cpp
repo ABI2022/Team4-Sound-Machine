@@ -430,7 +430,11 @@ void CTeam4SoundMachineDlg::OnBnClickedButton20()
 
 void CTeam4SoundMachineDlg::OnBnClickedButton21()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\jazz.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\jazz.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON21)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON21)->SetWindowText(_T("Jazz"));
 }
 
 
