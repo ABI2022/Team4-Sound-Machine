@@ -44,10 +44,37 @@ BEGIN_MESSAGE_MAP(DrumMachine, CDialogEx)
 	ON_BN_CLICKED(IDC_PERC1STOPP, &DrumMachine::OnBnClickedPerc1stopp)
 	ON_BN_CLICKED(IDC_Bass, &DrumMachine::OnBnClickedBass)
 	ON_BN_CLICKED(IDC_BASS1STOPP, &DrumMachine::OnBnClickedBass1stopp)
+	ON_BN_CLICKED(IDC_STOPPALL, &DrumMachine::OnBnClickedStoppall)
 END_MESSAGE_MAP()
 
 
 // DrumMachine-Meldungshandler
+
+
+void DrumMachine::OnBnClickedStoppall()
+{
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Kick1.mp3"), NULL, 0, NULL);
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Drums1.mp3"), NULL, 0, NULL);
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\130BPM.mp3"), NULL, 0, NULL);
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Perc1.mp3"), NULL, 0, NULL);
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Bass1.mp3"), NULL, 0, NULL);
+
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\FadeOut.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\FadeOut.mp3 from 0"), NULL, 0, NULL);
+}
+
+
+
+void DrumMachine::OnBnClickedCancel()
+{
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Kick1.mp3"), NULL, 0, NULL);
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Drums1.mp3"), NULL, 0, NULL);
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\130BPM.mp3"), NULL, 0, NULL);
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Perc1.mp3"), NULL, 0, NULL);
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Bass1.mp3"), NULL, 0, NULL);
+	CDialogEx::OnCancel();
+}
+
 
 
 void DrumMachine::OnBnClickedKick()
@@ -90,34 +117,30 @@ void DrumMachine::OnBnClickedMetronomstop()
 
 
 
-void DrumMachine::OnBnClickedCancel()
-{
-	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Kick1.mp3"), NULL, 0, NULL);
-	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Drums1.mp3"), NULL, 0, NULL);
-	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\130BPM.mp3"), NULL, 0, NULL);
-	CDialogEx::OnCancel();
-}
-
-
 void DrumMachine::OnBnClickedPerc()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\Perc1.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\Perc1.mp3 repeat"), NULL, 0, NULL);
 }
 
 
 void DrumMachine::OnBnClickedPerc1stopp()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Perc1.mp3"), NULL, 0, NULL);
 }
 
 
 void DrumMachine::OnBnClickedBass()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\Bass1.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\Bass1.mp3 repeat"), NULL, 0, NULL);
 }
 
 
 void DrumMachine::OnBnClickedBass1stopp()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Bass1.mp3"), NULL, 0, NULL);
 }
+
+
+

@@ -32,4 +32,5 @@ public:
 	afx_msg void OnBnClickedPerc1stopp();
 	afx_msg void OnBnClickedBass();
 	afx_msg void OnBnClickedBass1stopp();
+	afx_msg void OnBnClickedStoppall();
 };
