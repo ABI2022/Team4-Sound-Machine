@@ -409,7 +409,7 @@ void CTeam4SoundMachineDlg::OnBnClickedButton19()
 	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\Loud.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON19)->SetWindowText(_T("X"));
 	Sleep(1000);
-	GetDlgItem(IDC_BUTTON19)->SetWindowText(_T("Windows(Loud)"));
+	GetDlgItem(IDC_BUTTON19)->SetWindowText(_T("Win(Loud)"));
 }
 
 
