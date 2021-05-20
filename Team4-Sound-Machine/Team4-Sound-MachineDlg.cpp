@@ -414,7 +414,7 @@ void CTeam4SoundMachineDlg::OnBnClickedButton19()
 	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\Loud.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON19)->SetWindowText(_T("X"));
 	Sleep(1000);
-	GetDlgItem(IDC_BUTTON19)->SetWindowText(_T("Win(Loud)"));
+	GetDlgItem(IDC_BUTTON19)->SetWindowText(_T("Win10 (Loud)"));
 }
 
 
@@ -424,7 +424,7 @@ void CTeam4SoundMachineDlg::OnBnClickedButton20()
 	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\dezibel.mp3 from 0"), NULL, 0, NULL);
 	GetDlgItem(IDC_BUTTON20)->SetWindowText(_T("X"));
 	Sleep(1000);
-	GetDlgItem(IDC_BUTTON20)->SetWindowText(_T("Dezibel"));
+	GetDlgItem(IDC_BUTTON20)->SetWindowText(_T("Haenno"));
 }
 
 
@@ -440,37 +440,61 @@ void CTeam4SoundMachineDlg::OnBnClickedButton21()
 
 void CTeam4SoundMachineDlg::OnBnClickedButton29()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\spongebob.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\spongebob.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON29)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON29)->SetWindowText(_T("Spongebob"));
 }
 
 
 void CTeam4SoundMachineDlg::OnBnClickedButton30()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\knossi.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\knossi.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON30)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON30)->SetWindowText(_T("Knossi"));
 }
 
 
 void CTeam4SoundMachineDlg::OnBnClickedButton31()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\hansa.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\hansa.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON31)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON31)->SetWindowText(_T("Hansa"));
 }
 
 
 void CTeam4SoundMachineDlg::OnBnClickedButton32()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\mehmed.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\mehmed.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON32)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON32)->SetWindowText(_T("Mehmed"));
 }
 
 
 void CTeam4SoundMachineDlg::OnBnClickedButton33()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\toad.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\toad.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON33)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON33)->SetWindowText(_T("Toad last chr."));
 }
 
 
 void CTeam4SoundMachineDlg::OnBnClickedButton34()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\reifen.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\reifen.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON34)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON34)->SetWindowText(_T("Reifen"));
 }
 
 
