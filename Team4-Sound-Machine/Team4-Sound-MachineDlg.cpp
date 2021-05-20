@@ -435,6 +435,7 @@ void CTeam4SoundMachineDlg::OnBnClickedButton21()
 	GetDlgItem(IDC_BUTTON21)->SetWindowText(_T("X"));
 	Sleep(1000);
 	GetDlgItem(IDC_BUTTON21)->SetWindowText(_T("Jazz"));
+	//Test
 }
 
 
