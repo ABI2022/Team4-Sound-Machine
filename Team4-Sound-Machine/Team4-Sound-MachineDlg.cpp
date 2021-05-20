@@ -500,7 +500,11 @@ void CTeam4SoundMachineDlg::OnBnClickedButton34()
 
 void CTeam4SoundMachineDlg::OnBnClickedButton35()
 {
-	// TODO: Fügen Sie hier Ihren Handlercode für Benachrichtigungen des Steuerelements ein.
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\supersuit.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\supersuit.mp3 from 0"), NULL, 0, NULL);
+	GetDlgItem(IDC_BUTTON35)->SetWindowText(_T("X"));
+	Sleep(1000);
+	GetDlgItem(IDC_BUTTON35)->SetWindowText(_T("Supersuit"));
 }
 
 
