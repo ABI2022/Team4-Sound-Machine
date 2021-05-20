@@ -35,4 +35,8 @@ public:
 	afx_msg void OnBnClickedStoppall();
 	afx_msg void OnBnClickedPreset1();
 	afx_msg void OnBnClickedPreset1stopp();
+	afx_msg void OnBnClickedCrash();
+	afx_msg void OnBnClickedGlass();
+	afx_msg void OnBnClickedscratch();
+	afx_msg void OnBnClickedDancevoc();
 };

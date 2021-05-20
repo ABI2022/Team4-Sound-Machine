@@ -47,12 +47,16 @@ BEGIN_MESSAGE_MAP(DrumMachine, CDialogEx)
 	ON_BN_CLICKED(IDC_STOPPALL, &DrumMachine::OnBnClickedStoppall)
 	ON_BN_CLICKED(IDC_PRESET1, &DrumMachine::OnBnClickedPreset1)
 	ON_BN_CLICKED(IDC_PRESET1STOPP, &DrumMachine::OnBnClickedPreset1stopp)
+	ON_BN_CLICKED(IDC_Crash, &DrumMachine::OnBnClickedCrash)
+	ON_BN_CLICKED(IDC_Glass, &DrumMachine::OnBnClickedGlass)
+	ON_BN_CLICKED(IDC_scratch, &DrumMachine::OnBnClickedscratch)
+	ON_BN_CLICKED(IDC_DanceVoc, &DrumMachine::OnBnClickedDancevoc)
 END_MESSAGE_MAP()
 
 
 // DrumMachine-Meldungshandler
 
-
+// Stopp & Beenden
 void DrumMachine::OnBnClickedStoppall()
 {
 	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Kick1.mp3"), NULL, 0, NULL);
@@ -83,6 +87,7 @@ void DrumMachine::OnBnClickedCancel()
 
 
 
+//Loops 1
 void DrumMachine::OnBnClickedKick()
 {
 	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\Kick1.mp3"), NULL, 0, NULL);
@@ -105,20 +110,6 @@ void DrumMachine::OnBnClickedDrums()
 void DrumMachine::OnBnClickedDrums1stop()
 {
 	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Drums1.mp3"), NULL, 0, NULL);
-}
-
-
-
-
-void DrumMachine::OnBnClickedMetronom()
-{
-	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\130BPM.mp3"), NULL, 0, NULL);
-	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\130BPM.mp3 repeat"), NULL, 0, NULL);
-}
-
-void DrumMachine::OnBnClickedMetronomstop()
-{
-	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\130BPM.mp3"), NULL, 0, NULL);
 }
 
 
@@ -160,4 +151,48 @@ void DrumMachine::OnBnClickedPreset1()
 void DrumMachine::OnBnClickedPreset1stopp()
 {
 	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Preset1.mp3"), NULL, 0, NULL);
+}
+
+
+
+//SFX
+void DrumMachine::OnBnClickedCrash()
+{
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\crash.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\crash.mp3 from 0"), NULL, 0, NULL);
+}
+
+
+void DrumMachine::OnBnClickedGlass()
+{
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\glass.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\glass.mp3 from 0"), NULL, 0, NULL);
+}
+
+
+void DrumMachine::OnBnClickedscratch()
+{
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\scratch.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\scratch.mp3 from 0"), NULL, 0, NULL);
+}
+
+
+void DrumMachine::OnBnClickedDancevoc()
+{
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\dance.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\dance.mp3 from 0"), NULL, 0, NULL);
+}
+
+
+
+//Metronom
+void DrumMachine::OnBnClickedMetronom()
+{
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\130BPM.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\130BPM.mp3 repeat"), NULL, 0, NULL);
+}
+
+void DrumMachine::OnBnClickedMetronomstop()
+{
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\130BPM.mp3"), NULL, 0, NULL);
 }

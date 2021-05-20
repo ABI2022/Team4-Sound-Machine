@@ -47,13 +47,14 @@
 #define IDC_DRUMS1STOP2                 1024
 #define IDC_METRONOMSTOP                1024
 #define IDC_BUTTON18                    1025
-#define IDC_Bass2                       1025
+#define IDC_Crash                       1025
 #define IDC_BUTTON19                    1026
-#define IDC_Bass3                       1026
+#define IDC_Glass                       1026
 #define IDC_BUTTON20                    1027
-#define IDC_Bass4                       1027
+#define IDC_scratch                     1027
 #define IDC_BUTTON21                    1028
 #define IDC_Bass5                       1028
+#define IDC_DanceVoc                    1028
 #define IDC_STOPPALL                    1029
 #define IDC_BUTTON29                    1036
 #define IDC_BUTTON30                    1037
