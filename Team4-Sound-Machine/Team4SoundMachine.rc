@@ -57,7 +57,7 @@ BEGIN
     "#include ""res\\Team4SoundMachine.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
     "#include ""l.DEU\\afxres.rc""      // Standardkomponenten\r\n"
     "#if !defined(_AFXDLL)\r\n"
-    "#include ""l.DEU\\afxribbon.rc""   // Ressourcen fÃ¼r MFC-MenÃ¼band und -Steuerleiste\r\n"
+    "#include ""l.DEU\\afxribbon.rc""   // Ressourcen fÃƒÆ’Ã‚Â¼r MFC-MenÃƒÆ’Ã‚Â¼band und -Steuerleiste\r\n"
     "#endif\r\n"
     "#endif\r\n"
     "\0"
@@ -86,10 +86,11 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSM
 CAPTION "Informationen zu Team4-Sound-Machine"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,14,21,20
     LTEXT           "Team4-Sound-Machine, Version 2.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
     LTEXT           "Copyright (C) 2021",IDC_STATIC,42,26,114,8
     DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,37,35,20,20
 END
 
 IDD_TEAM4SOUNDMACHINE_DIALOG DIALOGEX 0, 0, 471, 351
@@ -144,23 +145,31 @@ BEGIN
     PUSHBUTTON      "Indiv 14",IDC_BUTTON49,401,261,50,35
 END
 
-IDD_DRUMMACHINE DIALOGEX 0, 0, 311, 177
+IDD_DRUMMACHINE DIALOGEX 0, 0, 605, 227
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Drum Machine"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "OK",IDOK,198,156,50,14
-    PUSHBUTTON      "Abbrechen",IDCANCEL,254,156,50,14
-    PUSHBUTTON      "Kick",IDC_KICK,27,25,50,35
-    PUSHBUTTON      "Drums",IDC_SNARE,27,74,50,35
-    PUSHBUTTON      "Hi-Hat",IDC_HIHAT,109,25,50,35
-    PUSHBUTTON      "Chords",IDC_CHORDS,109,74,50,35
-    PUSHBUTTON      "X",IDC_KICK1STOP,77,25,17,15
-    PUSHBUTTON      "X",IDC_DRUMS1STOP,78,74,17,15
-    PUSHBUTTON      "X",IDC_KICK4,159,25,17,15
-    PUSHBUTTON      "X",IDC_KICK5,159,74,17,15
-    PUSHBUTTON      "Metronom",IDC_METRONOM,27,122,50,35
-    PUSHBUTTON      "X",IDC_METRONOMSTOP,78,122,17,15
+    PUSHBUTTON      "Beenden",IDCANCEL,547,206,50,14
+    PUSHBUTTON      "Kick",IDC_KICK,27,29,50,35
+    PUSHBUTTON      "Drums",IDC_DRUMS,109,29,50,35
+    PUSHBUTTON      "Bass",IDC_Bass,273,30,50,35
+    PUSHBUTTON      "Perc",IDC_PERC,191,30,50,35
+    PUSHBUTTON      "X",IDC_KICK1STOP,77,29,17,15
+    PUSHBUTTON      "X",IDC_DRUMS1STOP,160,29,17,15
+    PUSHBUTTON      "X",IDC_BASS1STOPP,323,30,17,15
+    PUSHBUTTON      "X",IDC_PERC1STOPP,241,30,17,15
+    PUSHBUTTON      "Metronom",IDC_METRONOM,7,206,50,14
+    PUSHBUTTON      "X",IDC_METRONOMSTOP,58,207,17,13
+    PUSHBUTTON      "Crash",IDC_Bass2,458,30,50,35
+    PUSHBUTTON      "Glass",IDC_Bass3,522,30,50,35
+    PUSHBUTTON      "Scratch Hit",IDC_Bass4,458,79,50,35
+    PUSHBUTTON      "Dance VOC",IDC_Bass5,522,79,50,35
+    PUSHBUTTON      "Preset",IDC_PRESET1,375,30,50,13
+    PUSHBUTTON      "Stopp",IDC_PRESET1STOPP,375,52,50,13
+    LTEXT           "Loops",IDC_STATIC,179,15,20,8
+    LTEXT           "SFX",IDC_STATIC,508,15,13,8
+    PUSHBUTTON      "Stopp (all)",IDC_METRONOM2,277,206,50,14
 END
 
 
@@ -230,9 +239,9 @@ BEGIN
     IDD_DRUMMACHINE, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 304
+        RIGHTMARGIN, 597
         TOPMARGIN, 7
-        BOTTOMMARGIN, 170
+        BOTTOMMARGIN, 220
     END
 END
 #endif    // APSTUDIO_INVOKED
@@ -289,7 +298,7 @@ LANGUAGE 7, 1
 #include "res\Team4SoundMachine.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
 #include "l.DEU\afxres.rc"      // Standardkomponenten
 #if !defined(_AFXDLL)
-#include "l.DEU\afxribbon.rc"   // Ressourcen fÃ¼r MFC-MenÃ¼band und -Steuerleiste
+#include "l.DEU\afxribbon.rc"   // Ressourcen fÃƒÆ’Ã‚Â¼r MFC-MenÃƒÆ’Ã‚Â¼band und -Steuerleiste
 #endif
 #endif
 
