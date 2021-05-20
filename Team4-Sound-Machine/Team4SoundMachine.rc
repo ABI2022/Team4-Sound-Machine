@@ -57,7 +57,7 @@ BEGIN
     "#include ""res\\Team4SoundMachine.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
     "#include ""l.DEU\\afxres.rc""      // Standardkomponenten\r\n"
     "#if !defined(_AFXDLL)\r\n"
-    "#include ""l.DEU\\afxribbon.rc""   // Ressourcen fÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¼r MFC-MenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¼band und -Steuerleiste\r\n"
+    "#include ""l.DEU\\afxribbon.rc""   // Ressourcen fÃƒÆ’Ã‚Â¼r MFC-MenÃƒÆ’Ã‚Â¼band und -Steuerleiste\r\n"
     "#endif\r\n"
     "#endif\r\n"
     "\0"
@@ -119,15 +119,15 @@ BEGIN
     PUSHBUTTON      "Wednesday",IDC_BUTTON16,81,114,50,35
     PUSHBUTTON      "Ah Shit",IDC_BUTTON17,145,114,50,35
     PUSHBUTTON      "Hello There",IDC_BUTTON18,209,114,50,35
-    PUSHBUTTON      "Win10 (Loud)",IDC_BUTTON19,273,114,50,35
-    PUSHBUTTON      "Haenno",IDC_BUTTON20,337,114,50,35
+    PUSHBUTTON      "Win(Loud)",IDC_BUTTON19,273,114,50,35
+    PUSHBUTTON      "Dezibel",IDC_BUTTON20,337,114,50,35
     PUSHBUTTON      "Jazz",IDC_BUTTON21,401,114,50,35
-    PUSHBUTTON      "Spongebob",IDC_BUTTON29,17,163,50,35
-    PUSHBUTTON      "Knossi",IDC_BUTTON30,81,163,50,35
-    PUSHBUTTON      "Hansa",IDC_BUTTON31,145,163,50,35
-    PUSHBUTTON      "Mehmed",IDC_BUTTON32,209,163,50,35
-    PUSHBUTTON      "Toad last chr.",IDC_BUTTON33,273,163,50,35
-    PUSHBUTTON      "Reifen",IDC_BUTTON34,337,163,50,35
+    PUSHBUTTON      "Button1",IDC_BUTTON29,17,163,50,35
+    PUSHBUTTON      "Button1",IDC_BUTTON30,81,163,50,35
+    PUSHBUTTON      "Button1",IDC_BUTTON31,145,163,50,35
+    PUSHBUTTON      "Button1",IDC_BUTTON32,209,163,50,35
+    PUSHBUTTON      "Button1",IDC_BUTTON33,273,163,50,35
+    PUSHBUTTON      "Button1",IDC_BUTTON34,337,163,50,35
     PUSHBUTTON      "Button1",IDC_BUTTON35,401,163,50,35
     PUSHBUTTON      "Indiv 1",IDC_BUTTON36,17,211,50,35
     PUSHBUTTON      "Indiv 2",IDC_BUTTON37,81,211,50,35
@@ -161,10 +161,10 @@ BEGIN
     PUSHBUTTON      "X",IDC_PERC1STOPP,241,30,17,15
     PUSHBUTTON      "Metronom",IDC_METRONOM,7,206,50,14
     PUSHBUTTON      "X",IDC_METRONOMSTOP,58,207,17,13
-    PUSHBUTTON      "Crash",IDC_Bass2,458,30,50,35
-    PUSHBUTTON      "Glass",IDC_Bass3,522,30,50,35
-    PUSHBUTTON      "Scratch Hit",IDC_Bass4,458,79,50,35
-    PUSHBUTTON      "Dance VOC",IDC_Bass5,522,79,50,35
+    PUSHBUTTON      "Crash",IDC_Crash,458,30,50,35
+    PUSHBUTTON      "Glass",IDC_Glass,522,30,50,35
+    PUSHBUTTON      "Scratch Hit",IDC_scratch,458,79,50,35
+    PUSHBUTTON      "Dance VOC",IDC_DanceVoc,522,79,50,35
     PUSHBUTTON      "Preset",IDC_PRESET1,375,30,50,13
     PUSHBUTTON      "Stopp",IDC_PRESET1STOPP,375,52,50,13
     LTEXT           "Loops",IDC_STATIC,179,15,20,8
@@ -298,7 +298,7 @@ LANGUAGE 7, 1
 #include "res\Team4SoundMachine.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
 #include "l.DEU\afxres.rc"      // Standardkomponenten
 #if !defined(_AFXDLL)
-#include "l.DEU\afxribbon.rc"   // Ressourcen fÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¼r MFC-MenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¼band und -Steuerleiste
+#include "l.DEU\afxribbon.rc"   // Ressourcen fÃƒÆ’Ã‚Â¼r MFC-MenÃƒÆ’Ã‚Â¼band und -Steuerleiste
 #endif
 #endif
 
