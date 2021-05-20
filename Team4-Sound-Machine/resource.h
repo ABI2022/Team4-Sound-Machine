@@ -54,7 +54,6 @@
 #define IDC_Bass4                       1027
 #define IDC_BUTTON21                    1028
 #define IDC_Bass5                       1028
-#define IDC_METRONOM2                   1029
 #define IDC_STOPPALL                    1029
 #define IDC_BUTTON29                    1036
 #define IDC_BUTTON30                    1037

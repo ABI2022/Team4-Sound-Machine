@@ -45,6 +45,8 @@ BEGIN_MESSAGE_MAP(DrumMachine, CDialogEx)
 	ON_BN_CLICKED(IDC_Bass, &DrumMachine::OnBnClickedBass)
 	ON_BN_CLICKED(IDC_BASS1STOPP, &DrumMachine::OnBnClickedBass1stopp)
 	ON_BN_CLICKED(IDC_STOPPALL, &DrumMachine::OnBnClickedStoppall)
+	ON_BN_CLICKED(IDC_PRESET1, &DrumMachine::OnBnClickedPreset1)
+	ON_BN_CLICKED(IDC_PRESET1STOPP, &DrumMachine::OnBnClickedPreset1stopp)
 END_MESSAGE_MAP()
 
 
@@ -59,6 +61,8 @@ void DrumMachine::OnBnClickedStoppall()
 	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Perc1.mp3"), NULL, 0, NULL);
 	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Bass1.mp3"), NULL, 0, NULL);
 
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Preset1.mp3"), NULL, 0, NULL);
+
 	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\FadeOut.mp3"), NULL, 0, NULL);
 	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\FadeOut.mp3 from 0"), NULL, 0, NULL);
 }
@@ -72,6 +76,8 @@ void DrumMachine::OnBnClickedCancel()
 	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\130BPM.mp3"), NULL, 0, NULL);
 	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Perc1.mp3"), NULL, 0, NULL);
 	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Bass1.mp3"), NULL, 0, NULL);
+
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Preset1.mp3"), NULL, 0, NULL);
 	CDialogEx::OnCancel();
 }
 
@@ -144,3 +150,14 @@ void DrumMachine::OnBnClickedBass1stopp()
 
 
 
+void DrumMachine::OnBnClickedPreset1()
+{
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\Preset1.mp3"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\Preset1.mp3 repeat"), NULL, 0, NULL);
+}
+
+
+void DrumMachine::OnBnClickedPreset1stopp()
+{
+	mciSendString(_T("stop ..\\Team4-Sound-Machine\\sounds\\Preset1.mp3"), NULL, 0, NULL);
+}

@@ -206,6 +206,9 @@ HCURSOR CTeam4SoundMachineDlg::OnQueryDragIcon()
 
 void CTeam4SoundMachineDlg::OnBnClickedDrummachine()
 {
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\dm.wav"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\dm.wav from 0"), NULL, 0, NULL);
+
 	DrumMachine* drummachine = new DrumMachine();
 	drummachine->DoModal();
 
@@ -215,6 +218,9 @@ void CTeam4SoundMachineDlg::OnBnClickedDrummachine()
 
 void CTeam4SoundMachineDlg::OnBnClickedAppAbout()
 {
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\credits.wav"), NULL, 0, NULL);
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\credits.wav from 0"), NULL, 0, NULL);
+
 	AboutBox* credits = new AboutBox();
 	credits->DoModal();
 
@@ -224,12 +230,11 @@ void CTeam4SoundMachineDlg::OnBnClickedAppAbout()
 
 void CTeam4SoundMachineDlg::OnBnClickedButtontest() // Erklärung vom Sound-Abspielen
 {
-	// const wchar_t indiv[] = (_T("test")); / Für umbenennen --> Name wird in "indiv" gespeichert und kann somit in SetWindwText eingesetzt werden
-	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\schick.mp3"), NULL, 0, NULL); // öffnet mp3
-	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\schick.mp3 from 0"), NULL, 0, NULL); //spielt mp3 bei jedem klick von vorne
+	mciSendString(_T("open ..\\Team4-Sound-Machine\\sounds\\schick.mp3"), NULL, 0, NULL); // Öffnet mp3
+	mciSendString(_T("play ..\\Team4-Sound-Machine\\sounds\\schick.mp3 from 0"), NULL, 0, NULL); // Spielt mp3 bei jedem klick von vorne
 	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("X")); // Feedback vom angewählten Button
 	Sleep (1000);
-	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("Uhh Schick!")); // Einsetzen vom Individuellen Text oder Vorherigem
+	GetDlgItem(IDC_BUTTONTEST)->SetWindowText(_T("Uhh Schick!")); // Vorherigen Text wieder anzeigen
 }
 
 void CTeam4SoundMachineDlg::OnBnClickedButton2()
